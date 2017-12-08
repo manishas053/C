@@ -3,7 +3,7 @@
 
 int main(){
   int i, strLength, count = 0;
-  char input[1000];
+  char input[100000];
   gets(input);
   for(i = 0; i <= strlen(input); i++){
     if(i + 5 <= strlen(input)){

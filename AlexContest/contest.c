@@ -1,6 +1,15 @@
+//#######################################################################################################
+// One day Alex was creating a contest about his friends, but accidentally deleted it.                  #
+// Fortunately, all the problems were saved, but now he needs to find them among other problems.        #
+// write a program, which will determine if a problem is from this contest by its name.                 #
+// It is known, that problem is from this contest if and only if its name contains one of Alex's        #
+// friends' name exactly once. His friends' names are "Danil", "Olya", "Slava", "Ann" and "Nikita".     #
+// Print "YES", if problem is from this contest, and "NO" otherwise.                                    #
+//#######################################################################################################
+
+
 #include<stdio.h>
 #include<string.h>
-
 int main(){
   int i, strLength, count = 0;
   char input[100000];

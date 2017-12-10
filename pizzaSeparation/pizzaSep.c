@@ -2,7 +2,7 @@
 #include<math.h>
 
 int main(){
-  int n, i, j, x, start, end kx, min, temp, sum1 = 0, sum2 = 0, diff = 0, a[100];
+  int n, i, j, x, start, end, b, kx, min, temp, sum1 = 0, sum2 = 0, diff = 0, a[100];
   scanf("%d", &n);
   for(i = 0; i < n; i++){
     scanf("%d", &a[i]);
@@ -52,9 +52,9 @@ int main(){
   			for (kx = start; kx <= end; kx++){
   				x += a[kx];
   			}
-  		  int a = 2 * abs(x - 180);
-  		  if (min > a)
-  			 min = a;
+  		  b = 2 * abs(x - 180);
+  		  if (min > b)
+  			 min = b;
   		}
   	}
     printf("%d\n", min);

@@ -1,4 +1,3 @@
-By yoki, contest: Educational Codeforces Round 34 (Rated for Div. 2), problem: (C) Boxes Packing, Accepted, #
 
 #include <stdio.h>
 

@@ -8,36 +8,31 @@ For input 3 print,
 #include <stdio.h>
 
 int main(){
-  int i, j, row, res, k = 0, count = 0, m = 2;
+  int i, j, row, k=1;
   printf("No. of rows : ");
   scanf("%d", &row);
-  for(i = 1; i <= row; i++){
-    count = k;
-    for(j = 1; j <= row; j++){
-      if(i % 2 == 0){
-        if(j < row/2){
-          if(j == 1){
-            res = m*row + 1;
-          }
-          printf("%d", res);
-          res ++;
-          m += 2;
-        }
-        else{
-          if(j == 1){
-            res = (m+1)*row+1;
-          }
-          printf("%d", res);
-          res++;
-          m -= 2;
-        }
+  for(i = 0; i < row; i += 2){
+    k = 1;
+    for(j = 0; j < row; j ++){
+      printf("%d", row * i + k);
+      k ++;
+      if(j != row - 1){
+        printf("*");
       }
-      else{
-        count++;
-        printf("%d", count);
-        k++;
-      }
-      if(j < row){
+    }
+    printf("\n");
+  }
+
+  if(row % 2){
+    i -= 2;
+  }
+
+  for(i --; i > 0; i -= 2){
+    k = 1;
+    for(j = 0; j < row; j ++){
+      printf("%d", row * i + k);
+      k++;
+      if(j != row - 1){
         printf("*");
       }
     }
